@@ -34,7 +34,7 @@ a {
 }
 
 .headerAudioPlayerButton {
-    color: #E81123;
+    color: #E81123 !important;
 }
 
 .headerBackButton {
