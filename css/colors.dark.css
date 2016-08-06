@@ -63,7 +63,7 @@ select[is="emby-select"], input[is="emby-input"] {
 }
 
 .mdl-textfield--floating-label.is-focused .mdl-textfield__label, .mdl-textfield--floating-label.is-dirty .mdl-textfield__label, .mdl-textfield--floating-label.has-placeholder .mdl-textfield__label {
-    color: #E81123 !important !important;
+    color: #E81123 !important;
 }
 
 .checkboxOutline {
@@ -145,7 +145,7 @@ select[is="emby-select"], input[is="emby-input"] {
 }
 
 .userViewNames button:focus {
-    color: #E81123 !important !important;
+    color: #E81123 !important;
     opacity: 1;
 }
 
@@ -154,7 +154,7 @@ select[is="emby-select"], input[is="emby-input"] {
     }
 
 .userViewNames button:focus {
-    color: #E81123 !important !important;
+    color: #E81123 !important;
     opacity: 1;
 }
 
