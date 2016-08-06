@@ -16,9 +16,9 @@ define(['playbackManager', 'pluginManager', 'browser', 'connectionManager', 'eve
 
         var self = this;
 
-        self.name = 'Default Skin';
+        self.name = 'Dark Theme - RED';
         self.type = 'skin';
-        self.id = 'defaultskin';
+        self.id = 'emby.theater.dark.theme.RED';
 
         var dependencyPrefix = self.id;
         var settingsObjectName = dependencyPrefix + '/skinsettings';
@@ -48,8 +48,6 @@ define(['playbackManager', 'pluginManager', 'browser', 'connectionManager', 'eve
             } else if (browser.xboxOne) {
                 // Xbox defines good default font sizes, so load a stylesheet that only applies the font family
                 list.push('css!' + pluginManager.mapPath(self, 'css/fonts.xbox'));
-            } else if (browser.edge) {
-                list.push('css!' + pluginManager.mapPath(self, 'css/fonts.segoe'));
             } else {
                 console.log("Using default fonts");
                 list.push('opensansFont');
@@ -58,8 +56,8 @@ define(['playbackManager', 'pluginManager', 'browser', 'connectionManager', 'eve
 
             // The samsung and lg tv browsers don't quite support all of the flex techniques being used, so add a stylehsheet to degrade
             if (browser.noFlex) {
-                console.log("** Using noflex css");
-                list.push('css!' + pluginManager.mapPath(self, 'css/noflex'));
+                console.log("** Using smart tv css");
+                list.push('css!' + pluginManager.mapPath(self, 'css/smarttv'));
             }
 
             // Needed by the header
@@ -221,7 +219,7 @@ define(['playbackManager', 'pluginManager', 'browser', 'connectionManager', 'eve
                 type: 'settings',
                 category: 'Display',
                 thumbImage: '',
-                title: 'Default Skin'
+                title: 'Dark Theme - RED'
             });
 
             return routes;
@@ -396,20 +394,18 @@ define(['playbackManager', 'pluginManager', 'browser', 'connectionManager', 'eve
 
             document.querySelector('.headerLogo').classList.add('hide');
 
-            if (!browser.tv) {
-                document.querySelector('.headerSearchButton').classList.remove('hide');
-            }
+            document.querySelector('.headerSearchButton').classList.remove('hide');
 
             var headerUserButton = document.querySelector('.headerUserButton');
 
             if (user.PrimaryImageTag) {
 
-                headerUserButton.innerHTML = '<img src="' + Emby.Models.userImageUrl(user, {
+                headerUserButton.innerHTML = '<img class="largeIcon" src="' + Emby.Models.userImageUrl(user, {
                     height: 38
                 }) + '" />';
 
             } else {
-                headerUserButton.innerHTML = '<i class="md-icon">person</i>';
+                headerUserButton.innerHTML = '<i class="largeIcon md-icon">person</i>';
             }
 
             document.querySelector('.headerUserButton').classList.remove('hide');
@@ -448,25 +444,25 @@ define(['playbackManager', 'pluginManager', 'browser', 'connectionManager', 'eve
             setBackdropStyle(isDetailBackdrop, isStaticBackdrop);
         }
 
-        var backgroundContainer;
+        var skinContainer;
         function setBackdropStyle(isDetailBackdrop, isStaticBackdrop) {
 
-            backgroundContainer = backgroundContainer || document.querySelector('.backgroundContainer');
+            skinContainer = skinContainer || document.querySelector('.skinContainer');
 
             if (isDetailBackdrop) {
 
-                backgroundContainer.classList.add('detailBackdrop');
+                skinContainer.classList.add('detailBackdrop');
 
             } else {
-                backgroundContainer.classList.remove('detailBackdrop');
+                skinContainer.classList.remove('detailBackdrop');
             }
 
             if (isStaticBackdrop) {
 
-                backgroundContainer.classList.add('staticBackdrop');
+                skinContainer.classList.add('staticBackdrop');
 
             } else {
-                backgroundContainer.classList.remove('staticBackdrop');
+                skinContainer.classList.remove('staticBackdrop');
             }
         }
     }
