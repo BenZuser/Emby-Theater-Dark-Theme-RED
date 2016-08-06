@@ -1,10 +1,10 @@
 {
-    "name": "emby.defaultskin",
-    "displayName": "Default Skin",
+    "name": "emby.theater.dark.theme.RED",
+    "displayName": "Dark Theme - RED",
     "version": "1.0.0",
-    "description": "The default Emby skin.",
+    "description": "A dark theme with red as accent color.",
     "plugin": "plugin.js",
-    "homepage": "https://github.com/MediaBrowser/emby-web-defaultskin",
-    "thumb": "",
-    "backdrop": ""
+    "homepage": "https://github.com/BenZuser/Emby-Theater-Dark-Theme-RED",
+    "thumb": "https://cdn.rawgit.com/BenZuser/Emby-Dark-Themes-Resources/master/images/thumb/Dark%20Theme%20-%20RED.png",
+    "backdrop": "https://cdn.rawgit.com/BenZuser/Emby-Dark-Themes-Resources/master/images/wallpaper/bg-plugin-1920.jpg"
 }
