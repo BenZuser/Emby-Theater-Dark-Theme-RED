@@ -178,3 +178,9 @@ select[is="emby-select"], input[is="emby-input"] {
 .tagline {
     color: #FFEB3B;
 }
+
+
+
+
+.settingsIcon {
+    background-color: #4285F4;}
