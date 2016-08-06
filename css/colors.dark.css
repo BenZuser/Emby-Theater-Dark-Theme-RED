@@ -3,14 +3,14 @@ html {
 }
 
 a {
-    color: #52B54B;
+    color: #4285F4;
     outline: none !important;
     display: inline-block;
     transition: all .15s ease-out;
 }
 
     a:focus {
-        background: #52B54B;
+        background: #4285F4;
         color: #fff;
         transform: scale(1.16);
         padding-left: .3em;
@@ -63,7 +63,7 @@ select[is="emby-select"], input[is="emby-input"] {
 }
 
 .mdl-textfield--floating-label.is-focused .mdl-textfield__label, .mdl-textfield--floating-label.is-dirty .mdl-textfield__label, .mdl-textfield--floating-label.has-placeholder .mdl-textfield__label {
-    color: #52B54B !important;
+    color: #4285F4 !important;
 }
 
 .checkboxOutline {
@@ -75,7 +75,7 @@ select[is="emby-select"], input[is="emby-input"] {
 }
 
 [is="emby-button"]:focus:not(.btnUserViewHeader) {
-    background: #52B54B;
+    background: #4285F4;
     color: #fff;
 }
 
@@ -84,12 +84,12 @@ select[is="emby-select"], input[is="emby-input"] {
 }
 
 .card:focus:not(.round) .cardBox {
-    border-color: #52B54B;
+    border-color: #4285F4;
     /*border-color: rgba(0, 0, 0, .6);*/
 }
 
 .card[data-cardtype='embyconnect'] .cardImageContainer {
-    background-color: #52B54B;
+    background-color: #4285F4;
 }
 
 .headerBackButton {
@@ -145,21 +145,21 @@ select[is="emby-select"], input[is="emby-input"] {
 }
 
 .userViewNames button:focus {
-    color: #52B54B !important;
+    color: #4285F4 !important;
     opacity: 1;
 }
 
     .userViewNames button:focus .userViewButtonText {
-        border-bottom-color: #52B54B;
+        border-bottom-color: #4285F4;
     }
 
 .userViewNames button:focus {
-    color: #52B54B !important;
+    color: #4285F4 !important;
     opacity: 1;
 }
 
     .userViewNames button:focus .userViewButtonText {
-        border-bottom-color: #52B54B;
+        border-bottom-color: #4285F4;
     }
 
 .selectedItemSecondaryInfo {
