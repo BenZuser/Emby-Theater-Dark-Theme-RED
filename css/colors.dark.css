@@ -3,14 +3,14 @@ html {
 }
 
 a {
-    color: #4285F4;
+    color: #E81123;
     outline: none !important;
     display: inline-block;
     transition: all .15s ease-out;
 }
 
     a:focus {
-        background: #4285F4;
+        background: #E81123;
         color: #fff;
         transform: scale(1.16);
         padding-left: .3em;
@@ -63,7 +63,7 @@ select[is="emby-select"], input[is="emby-input"] {
 }
 
 .mdl-textfield--floating-label.is-focused .mdl-textfield__label, .mdl-textfield--floating-label.is-dirty .mdl-textfield__label, .mdl-textfield--floating-label.has-placeholder .mdl-textfield__label {
-    color: #4285F4 !important;
+    color: #E81123 !important;
 }
 
 .checkboxOutline {
@@ -75,7 +75,7 @@ select[is="emby-select"], input[is="emby-input"] {
 }
 
 [is="emby-button"]:focus:not(.btnUserViewHeader) {
-    background: #4285F4;
+    background: #E81123;
     color: #fff;
 }
 
@@ -84,12 +84,12 @@ select[is="emby-select"], input[is="emby-input"] {
 }
 
 .card:focus:not(.round) .cardBox {
-    border-color: #4285F4;
+    border-color: #E81123;
     /*border-color: rgba(0, 0, 0, .6);*/
 }
 
 .card[data-cardtype='embyconnect'] .cardImageContainer {
-    background-color: #4285F4;
+    background-color: #E81123;
 }
 
 .headerBackButton {
@@ -145,21 +145,21 @@ select[is="emby-select"], input[is="emby-input"] {
 }
 
 .userViewNames button:focus {
-    color: #4285F4 !important;
+    color: #E81123 !important;
     opacity: 1;
 }
 
     .userViewNames button:focus .userViewButtonText {
-        border-bottom-color: #4285F4;
+        border-bottom-color: #E81123;
     }
 
 .userViewNames button:focus {
-    color: #4285F4 !important;
+    color: #E81123 !important;
     opacity: 1;
 }
 
     .userViewNames button:focus .userViewButtonText {
-        border-bottom-color: #4285F4;
+        border-bottom-color: #E81123;
     }
 
 .selectedItemSecondaryInfo {
@@ -183,4 +183,4 @@ select[is="emby-select"], input[is="emby-input"] {
 
 
 .settingsIcon {
-    background-color: #4285F4;}
+    background-color: #E81123 !important;}
