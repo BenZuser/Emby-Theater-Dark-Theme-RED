@@ -1,3 +1,5 @@
+url : https://benzuser.github.io/Emby-Theater-Dark-Theme-RED/package.json
+
 # emby-web-defaultskin
 
 This default skin for Emby Theater. To create your own skin, follow these steps:
